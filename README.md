@@ -9,9 +9,9 @@ turned on:
 
 ## Setup
 
-### Rebar 3
+### epm 3
 
-[rebar3](https://github.com/erlang/rebar3) already includes this
+[epm](https://github.com/erlang/epm) already includes this
 library! There's no need for special configuration at all.
 
 ### erlang.mk
@@ -24,8 +24,8 @@ TEST_DEPS = eunit_formatters
 EUNIT_OPTS = no_tty, {report, {eunit_progress, [colored, profile]}}
 ```
 
-### Rebar 2 (legacy)
-Add `eunit_formatters` as a dep in your `rebar.config`. Now configure
+### epm 2 (legacy)
+Add `eunit_formatters` as a dep in your `epm.config`. Now configure
 eunit to use one of the output formatters (currently only
 `eunit_progress`):
 

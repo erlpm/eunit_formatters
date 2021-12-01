@@ -3,13 +3,13 @@
 all: compile
 
 compile:
-	./rebar compile
+	./epm compile
 
 # deps:
-# 	./rebar get-deps
+# 	./epm get-deps
 
 clean:
-	./rebar clean
+	./epm clean
 
 DIALYZER_APPS = kernel stdlib sasl erts eunit
 
